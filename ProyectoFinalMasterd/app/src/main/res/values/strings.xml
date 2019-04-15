@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Proyecto Final Masterd</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyB2aUraa-_0ohjiY9qB43bFUpWxaGnyIi0</string>
+    <string name="action_add">Añadir Nota</string>
+    <string name="action_map">Abrir Mapa</string>
+</resources>

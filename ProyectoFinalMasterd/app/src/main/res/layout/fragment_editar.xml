@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@drawable/nota">
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="90" >
+
+        <EditText
+            android:id="@+id/tituloNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe un título"
+            />
+        <EditText
+            android:id="@+id/contenidoNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="5"
+            android:maxLines="5"
+            android:allowUndo="true"
+            android:inputType="textMultiLine"
+            android:gravity="top|left"
+            android:scrollbars="vertical"
+            android:hint="Escribe el contenido de la nota"
+            />
+
+       <ImageView
+           android:id="@+id/foto"
+           android:layout_width="match_parent"
+           android:layout_height="fill_parent"
+           android:visibility="gone"
+           />
+
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center">
+
+    <ImageButton
+        android:src="@android:drawable/ic_menu_camera"
+        android:background="@android:color/transparent"
+        android:id="@+id/hacerFoto"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contenidoNota"
+        android:visibility="gone"
+
+        android:textSize="12sp"
+        />
+    <ImageButton
+        android:src="@android:drawable/ic_menu_compass"
+        android:background="@android:color/transparent"
+        android:id="@+id/buscarLocalizacion"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="12sp"
+        />
+      <ImageButton
+          android:id="@+id/botonAccion"
+          android:background="@android:color/transparent"
+          android:src="@android:drawable/ic_menu_edit"
+          android:layout_width="50dp"
+          android:layout_height="wrap_content"
+          android:textSize="12sp"
+          />
+        <ImageButton
+            android:id="@+id/botonEliminar"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_delete"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+</LinearLayout>
